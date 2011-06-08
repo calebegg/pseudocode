@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>pseudocode</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onclick="window.update();">
+    <h1 style="font-family:pseudocode">pseudocode</h1>
+    <div id="intro">
+      An alternate way of viewing code that adds more interesting characters to
+      the mix in the hopes of helping find bugs and making code more
+      skimable.
+    </div>
+    <div id="left" class="dejavu">
+      Deja Vu Sans Mono:
+      <textarea rows="24" cols="80" class="dejavu" id="input" spellcheck="false"
+        onkeyup="window.update();"
+        onclick="window.update();"
+        onkeydown="window.update();"
+        onfocus="window.focused = true; window.update()"
+        onblur="window.focused = false; window.update()">
+/* Change some things */
+for x1, x2 in xs:
+  if x1 &lt;= x2:
+    x1, x2 = x2, x1
+  while !(a == b) || a != b:
+    a = a * 2
+    b = b / 2
+    cout &lt;&lt; "new\nline";
+print "I shan't; I can't screw up apostrophes"
+str = u'Unicode strings'
+str = r'Raw strings'
+string str = @"C# flavored raw strings"
+
+List<Item> = new List<Item>();
+c_string[len - 1] = '\0';
+System.out.println("\"Test\", he said.");
+</textarea>
+    </div>
+    <div id="right" class="pseudocode">
+      Pseudocode:
+      <div id="display">loading... </div>
+    </div>
+    <div class="pseudocode" id="render"></div>
+    <script>
+      window.main();
+    </script>
+  </body>
+</html>
