@@ -1,13 +1,15 @@
 Non-authoritative list of what this tool does:
-===================================================
+==============================================
 
 * Single character replacements:
+
     =   left arrow
     !   logical not
     <   left angle bracket (where appropriate)
     >   right angle bracket
 
 * Two character replacements:
+
     ==  =
     !=  not equal to
     <=  less than or equal
