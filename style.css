@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Pseudocode;
+  src: url("pseudocode.woff"); }
+
+@font-face {
+  font-family: DejaVu;
+  src: url("DejaVuSansMono.woff"); }
+
+div, h1 {
+  margin: 0;
+  padding: 0; }
+
+.pseudocode {
+  font-family: Pseudocode, monospace;
+  font-size: 10pt;
+  line-height: 2.5ex; }
+
+.dejavu {
+  font-family: DejaVu, monospace;
+  font-size: 10pt;
+  line-height: 2.5ex; }
+
+h1 {
+  font-family: Pseudocode;
+  border-bottom: solid black 1px; }
+
+span#highlight {
+  background: #88bbff; }
+
+span.join {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap; }
+
+span#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 2.5ex;
+  background: black;
+  position: absolute; }
+
+#left, #right {
+  float: left;
+  width: 47%;
+  padding: 1%; }
+
+div#display, textarea#input {
+  display: block;
+  width: 100%;
+  margin-top: 10px; }
+
+#intro {
+  padding: 10px;
+  font-family: sans-serif; }
