@@ -1,9 +1,11 @@
-Non-authoritative[^1] list of what this tool does:
+Non-authoritative list of what this tool does:
 ===================================================
 
 * Single character replacements:
     =   left arrow
     !   logical not
+    <   left angle bracket (where appropriate)
+    >   right angle bracket
 
 * Two character replacements:
     ==  =
@@ -19,9 +21,18 @@ Non-authoritative[^1] list of what this tool does:
     \t  tab symbol
     \n  linebreak symbol
     \   \ space symbol
-    /*  (tightened)
-    */  (tightened)
-    //  (tightened)
+    /*  This + all below: Tightened spacing.
+    */
+    //
+    \"\"\"
+    \'\'\'
+    ///
+    ()
+    []
+    {}
+    0x
+    ::
+
 * Numbers at the end of variable names -> subscripts
 * Dumb quotes -> smart/curly quotes
 * < and > -> Angle brackets, sometimes
@@ -30,6 +41,3 @@ Non-authoritative[^1] list of what this tool does:
 * Midline-aligned + - = ! * > <
 * Moved {, [, ( right.
 * Moved }, ], ), ;, ',' left.
-
-
-[^1] for authoritative list, see source
