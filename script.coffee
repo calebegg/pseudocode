@@ -56,7 +56,7 @@ regex_rules = [
         String.fromCharCode(parseInt(digit) + 0x2080)).join('')]
 
   # Change negation back to exlamation mark in some cases
-  [/[\w#]\ue01b/g, '$1' + '!']
+  [/([\w#])\ue01b/g, '$1' + '!']
 
   # Cleanup
   [/&/g, '&amp;']
